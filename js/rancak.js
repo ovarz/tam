@@ -1,3 +1,12 @@
+function nav_toggle(){
+  $('.header-menu-toggle').click(function(){
+	$('body').toggleClass('nav-clicked');
+    return false;
+  });	
+}
+
+
+
 function nav_sub_toggle(){
   $('.nav-parent').click(function(){
 	$(this).toggleClass('nav-open');
@@ -19,6 +28,7 @@ function back_to_top(){
 
 $(document).ready(function(){
   "use strict";
+  nav_toggle();
   nav_sub_toggle();
   back_to_top();
 });

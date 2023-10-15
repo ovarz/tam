@@ -39,11 +39,11 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 
-.rancak-container{display:grid; min-height:100vh;}
+.rancak-container{display:grid; min-height:100vh; grid-auto-rows:min-content;}
 
 
 
-nav{position:-webkit-sticky; position:sticky; z-index:calc(var(--max-zindex) - 5000); top:0; left:0; width:100%; overflow-x:hidden; overflow-y:auto;}
+nav{z-index:calc(var(--max-zindex) - 5000); top:0; overflow-x:hidden; overflow-y:auto;}
 nav::-webkit-scrollbar{width:0px;}
 .nav-list{display:grid; grid-template-columns:auto 1fr auto; grid-gap:var(--size-3); width:100%; padding:0 var(--size-4); border-bottom:1px solid; font-weight:normal;}
 .nav-list > *{display:flex; align-items:center; height:var(--size-6);}
@@ -56,15 +56,32 @@ nav::-webkit-scrollbar{width:0px;}
 
 
 
+.rancak-content{padding:var(--size-4); min-height:144vh;}
 
 
-@media screen and (min-width:0px) and (max-width:1023px){
+
+header{display:flex; justify-content:space-between; position:-webkit-sticky; position:sticky; top:var(--size-4);}
+.header-left, .header-right{display:flex;}
+.header-button{height:var(--size-6); padding:0 var(--size-3);}
+.header-button .svgicon, .header-home-frame{width:auto; height:var(--size-4);}
+
+.header-menu-toggle{padding-left:var(--size-4);}
+.header-home-frame{width:30px;}
+.header-home-frame:before{padding-top:71.88%;}
+.header-profile{display:flex; align-items:center; padding-right:var(--size-4);}
+.header-profile-frame{width:var(--size-4); height:var(--size-4); margin-right:var(--size-3);}
+
+
+
+
+
+@media screen and (min-width:0px) and (max-width:1279px){
   .desktop-only, .share-box-static{display:none !important; visibility:hidden; content-visibility:hidden;}
   .desktop-only iframe[loading=lazy]{content-visibility:hidden !important;}
   
   
   
-  nav{height:50vh;}
+  nav{position:fixed; top:var(--size-7); left:-100vh; width:var(--menu-size); height:calc(100vh - var(--size-7) - var(--size-4));}
   .nav-label{}
 }
 
@@ -72,7 +89,7 @@ nav::-webkit-scrollbar{width:0px;}
 
 
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1280px){
   :root, :before, :after{
     --default-fontsize:16px;
   }
@@ -84,5 +101,5 @@ nav::-webkit-scrollbar{width:0px;}
   
   
   
-  nav{height:100vh;}
+  nav{position:-webkit-sticky; position:sticky; left:0; width:100%; height:100vh;}
 }

@@ -11,7 +11,7 @@
     'Dashboard' => [
       'icon' => 'home',
       'label' => 'Dashboard',
-      'link' => '',
+      'link' => 'home.php',
       'parent' => 'no',
       'subnav' => []
     ],
@@ -64,6 +64,96 @@
       'icon' => 'request-support',
       'label' => 'Request Support',
       'link' => 'request-support/',
+      'parent' => 'no',
+      'subnav' => []
+    ],
+    'Master' => [
+      'icon' => 'master',
+      'label' => 'Master',
+      'link' => 'master/',
+      'parent' => 'yes',
+      'subnav' => [
+        [
+		  'icon' => 'sub',
+		  'label' => 'Dashboard - Banner',
+		  'link' => 'master/dashboard-banner/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Dashboard - Running Text',
+		  'link' => 'master/dashboard-running-text/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Dashboard - F.A.Q',
+		  'link' => 'master/dashboard-faq/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Email Recipient',
+		  'link' => 'master/email-recipient/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Vehicle Model',
+		  'link' => 'master/vehicle-model/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Vehicle Brand',
+		  'link' => 'master/vehicle-brand/',
+          'parent' => 'no'
+		],
+      ]
+    ],
+    'System' => [
+      'icon' => 'system',
+      'label' => 'System',
+      'link' => 'system/',
+      'parent' => 'yes',
+      'subnav' => [
+        [
+		  'icon' => 'sub',
+		  'label' => 'Users',
+		  'link' => 'system/users/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Roles',
+		  'link' => 'system/roles/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'General Configuration',
+		  'link' => 'system/general-configuration/',
+          'parent' => 'no'
+		],
+        [
+		  'icon' => 'sub',
+		  'label' => 'Alert Management',
+		  'link' => 'system/alert-management/',
+          'parent' => 'no'
+		],
+      ]
+    ],
+    'G-Fleet' => [
+      'icon' => 'gfleet',
+      'label' => 'G-Fleet',
+      'link' => 'gfleet/',
+      'parent' => 'no',
+      'subnav' => []
+    ],
+    'Universal Log' => [
+      'icon' => 'log',
+      'label' => 'Universal Log',
+      'link' => 'log/',
       'parent' => 'no',
       'subnav' => []
     ],
