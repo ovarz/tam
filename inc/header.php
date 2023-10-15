@@ -4,7 +4,7 @@
 	  <?php require ($_SERVER['TAM'].'img/icon/menu.svg')?>
 	</button>
 	<a title="Home" class="header-button header-home content_center" href="home.php">
-	  <div class="header-home-frame flex_ori thumb-loading">
+	  <div class="toyota-logo header-home-frame flex_ori thumb-loading">
 	    <img alt="Logo Toyota" class="lazyload" src="img/logo-toyota.png"/>
 	  </div>
 	</a>

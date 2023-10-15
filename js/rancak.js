@@ -26,9 +26,24 @@ function back_to_top(){
 
 
 
+function custom_password(){
+  $('.form-toggle-password').click(function(){
+    if($(this).is('.show-pass')){
+     $(this).removeClass('show-pass').addClass('hide-pass');
+     $(this).parent().find(".form-box-field").attr("type","text");
+    }else{
+     $(this).removeClass('hide-pass').addClass('show-pass');
+     $(this).parent().find(".form-box-field").attr("type","password");
+    }
+  });
+}
+
+
+
 $(document).ready(function(){
   "use strict";
   nav_toggle();
   nav_sub_toggle();
   back_to_top();
+  custom_password();
 });

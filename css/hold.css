@@ -58,6 +58,18 @@ footer{background-color:var(--color-text-2); color:var(--bg-2); text-align:cente
 
 
 
+.form-box-field{border-color:var(--color-border); background-color:transparent; border-radius:var(--rounded-2);}
+.form-box-title{transition:var(--transition-default); color:var(--color-border);}
+.form-toggle-password{fill:var(--color-text-1);}
+
+.form-box-field:focus + .form-box-title, .form-box-field:valid + .form-box-title{background-color:var(--bg-1); color:var(--color-text-1);}
+
+.form-box-error .form-box-field:focus + .form-box-title, .form-box-error .form-box-field:valid + .form-box-title,
+.form-box-error .form-box-note{color:var(--color-text-3) !important;}
+.form-box-error .form-box-field{border-color:var(--color-text-3) !important;}
+
+
+
 
 
 @media screen and (min-width:0px) and (max-width:1023px){

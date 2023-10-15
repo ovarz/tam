@@ -25,9 +25,10 @@ body, html{font-family:'Nunito',sans-serif; font-size:var(--default-fontsize); f
 html{scroll-behavior:smooth; min-height:100vh;}
 body{background-color:var(--bg-1); overflow-x:hidden;}
 a, button{font-weight:bold;}
-.btn, a.btn, button.btn{padding:var(--size-3) var(--size-4); font-weight:normal; -webkit-appearance:none; text-transform:capitalize; 
+.btn, a.btn, button.btn{padding:var(--size-3) var(--size-4); font-weight:normal; -webkit-appearance:none; text-transform:uppercase; font-weight:bold;
 display:flex; text-align:center; align-items:center; justify-content:center;}
 .rancak-popup{display:none;}
+.toyota-logo{--aspect-ratio:377/271;}
 .width-max{position:relative; width:100%; max-width:var(--site-container); margin:0 auto;}
 
 
@@ -67,9 +68,22 @@ header{display:flex; justify-content:space-between; position:-webkit-sticky; pos
 
 .header-menu-toggle{padding-left:var(--size-4);}
 .header-home-frame{width:30px;}
-.header-home-frame:before{padding-top:71.88%;}
 .header-profile{display:flex; align-items:center; padding-right:var(--size-4);}
 .header-profile-frame{width:var(--size-4); height:var(--size-4); margin-right:var(--size-3);}
+
+
+
+.form-box-container{--icon-size:var(--size-6); position:relative;}
+.form-box-field{position:relative; z-index:2000; width:100%; padding:var(--size-4); border:1px solid;}
+.form-password-field{padding-right:var(--icon-size);}
+.form-box-title{position:absolute; z-index:1; top:0; left:0; width:100%; height:100%; padding:var(--size-4); text-transform:capitalize;}
+.form-toggle-password{position:absolute; z-index:3000; top:0; right:0; width:var(--icon-size); height:100%;}
+.form-toggle-password .svgicon{width:auto; height:var(--size-4);}
+.form-toggle-password.show-pass .svgicon-pass-show, .form-toggle-password.hide-pass .svgicon-pass-hide{display:none;}
+.form-box-note{margin-top:var(--size-2); font-size:12px; font-style:italic;}
+
+.form-box-field:focus + .form-box-title,
+.form-box-field:valid + .form-box-title{z-index:4000; top:calc(var(--size-2) * -1); left:var(--size-2); width:auto; height:auto; padding:0 var(--size-3); line-height:100%;}
 
 
 
@@ -81,7 +95,7 @@ header{display:flex; justify-content:space-between; position:-webkit-sticky; pos
   
   
   
-  nav{position:fixed; top:var(--size-7); left:-100vh; width:var(--menu-size); height:calc(100vh - var(--size-7) - var(--size-4));}
+  nav{position:fixed; top:var(--size-7); left:-100vh; width:var(--menu-size); height:calc(100vh - (var(--size-7) * 2));}
   .nav-label{}
 }
 
