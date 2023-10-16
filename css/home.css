@@ -1,4 +1,5 @@
-.running-text{border:1px solid var(--color-border); border-radius:var(--rounded-2);}
+.running-text .section-title{margin-bottom:var(--size-3);}
+.running-text .acme-news-ticker-box{background-color:var(--bg-2); border:1px solid var(--color-border); border-radius:var(--rounded-2);}
 .running-text .antb-list{display:flex;}
 .running-text .antb-link{border-color:var(--color-border); -webkit-line-clamp:1; font-size:14px;
 display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;}
@@ -15,6 +16,15 @@ display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;}
 
 @media screen and (min-width:0px) and (max-width:767px){
   .home-banner .tns-nav, .home-banner .tns-controls{display:none;}
+  
+  
+  
+  .home-banner .tns-transparent{display:none !important;}
+  .home-banner .tns-inner{margin:0 !important;}
+  .home-banner-container, .home-banner-link{width:100% !important;}
+  .home-banner-container{display:grid; grid-gap:var(--size-1); transform:inherit !important;}
+  .home-banner-link{padding:0 !important;}
+  
 }
 
 

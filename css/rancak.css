@@ -25,7 +25,7 @@ body, html{font-family:'Nunito',sans-serif; font-size:var(--default-fontsize); f
 html{scroll-behavior:smooth; min-height:100vh;}
 body{background-color:var(--bg-1); overflow-x:hidden;}
 a, button{font-weight:bold;}
-.btn, a.btn, button.btn{padding:var(--size-3) var(--size-4); font-weight:normal; -webkit-appearance:none; text-transform:uppercase; font-weight:bold;
+.btn, a.btn, button.btn{padding:var(--size-3) var(--size-4); -webkit-appearance:none; text-transform:uppercase; font-weight:bold;
 display:flex; text-align:center; align-items:center; justify-content:center;}
 .rancak-popup{display:none;}
 .toyota-logo{--aspect-ratio:377/271;}
@@ -37,6 +37,22 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 .flex_ori:before{content:''; display:block; padding-top:calc(100% / calc(var(--aspect-ratio)));}
 .flex_ori img{position:absolute; z-index:2; top:0; left:0; width:100%; height:100%; object-fit:cover;}
 .flex_ori img:not([src]){visibility:hidden;}
+
+
+
+.section-title{display:flex; align-items:center;}
+.section-title .svgicon, .section-title-label{line-height:140%;}
+.section-title .svgicon{width:auto; height:24px;}
+.section-title-label{margin-left:var(--size-3); text-transform:uppercase; font-weight:normal; font-size:32px;}
+.section-default{display:grid; grid-gap:var(--size-3);}
+
+
+
+.section-search{display:grid; grid-template-columns:1fr auto auto; border:1px solid;}
+.section-search-field{padding:var(--size-4); width:100%;}
+.section-search-filter{padding:0 var(--size-4); border-left:1px solid; border-right:2px solid;}
+.section-search-filter .svgicon{width:auto; height:var(--size-4);}
+button.section-search-button{padding:var(--size-4);}
 
 
 
@@ -62,7 +78,7 @@ nav::-webkit-scrollbar{width:0px;}
 
 
 
-header{z-index:calc(var(--max-zindex) - 4000); display:flex; justify-content:space-between; position:-webkit-sticky; position:sticky; top:var(--size-4);}
+header{position:-webkit-sticky; position:sticky; z-index:calc(var(--max-zindex) - 4000); top:var(--size-4); display:flex; justify-content:space-between;}
 .header-left, .header-right{display:flex;}
 .header-button{height:var(--size-6); padding:0 var(--size-3);}
 .header-button .svgicon, .header-home-frame{width:auto; height:var(--size-4);}
@@ -85,6 +101,13 @@ header{z-index:calc(var(--max-zindex) - 4000); display:flex; justify-content:spa
 
 .form-box-field:focus + .form-box-title,
 .form-box-field:valid + .form-box-title{z-index:4000; top:calc(var(--size-2) * -1); left:var(--size-2); width:auto; height:auto; padding:0 var(--size-3); line-height:100%;}
+
+
+
+.section-faq-list{display:grid; grid-gap:var(--size-2);}
+.sfl-box{padding:var(--size-2) var(--size-4); border:1px solid;}
+.sfl-row{display:grid; padding:var(--size-3) 0; grid-template-columns:auto auto 1fr auto; grid-gap:var(--size-2);}
+.sfl-question{border-bottom:1px dashed;}
 
 
 

@@ -20,7 +20,10 @@
   
     <?php require ($_SERVER['TAM'].'inc/header.php')?>
 	
-	<div class="acme-news-ticker running-text">
+	
+	
+	<section title="Running Text" class="acme-news-ticker running-text">
+	  <?php $st_back='no'; $st_back_link=''; $st_icon='home'; $st_label='home'; require ($_SERVER['TAM'].'module/section-title.php')?>
 	  <div class="acme-news-ticker-box">
 		<ul class="antb-list">
 		  <?php for ($i=1; $i <= 10; $i++) { ?>
@@ -30,9 +33,11 @@
 		  <?php } ?>
 		</ul>
 	  </div>
-	</div>
+	</section>
 	
-	<div class="home-banner">
+	
+	
+	<section title="Home Banner" class="home-banner">
       <div class="home-banner-container">
         <?php 
           $banner_array = array();
@@ -49,7 +54,7 @@
           </a>
         <?php } ?>
       </div>
-	</div>
+	</section>
 	
   </div>
 </div>

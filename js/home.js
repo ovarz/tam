@@ -16,7 +16,7 @@ var slide_banner = tns({
   nav:true,
   navPosition:'bottom',
   mouseDrag:true,
-  autoplay:false,
+  autoplay:true,
   responsive:{
     768:{
       items:1,
