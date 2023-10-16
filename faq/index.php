@@ -37,7 +37,7 @@
 			  <div class="sfl-column">A</div>
 			  <div class="sfl-column">:</div>
 			  <div class="sfl-column">Anda dapat mengakses menu <b>System</b> > <b>User</b> > lalu klik <b>Add User</b></div>
-			  <div class="sfl-column"><?php require ($_SERVER['TAM'].'img/icon/right.svg')?></div>
+			  <div class="sfl-column sfl-more"><?php require ($_SERVER['TAM'].'img/icon/right.svg')?></div>
 			</a>
           </div>
 		<?php } ?>

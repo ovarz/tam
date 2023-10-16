@@ -108,6 +108,7 @@ header{position:-webkit-sticky; position:sticky; z-index:calc(var(--max-zindex) 
 .sfl-box{padding:var(--size-2) var(--size-4); border:1px solid;}
 .sfl-row{display:grid; padding:var(--size-3) 0; grid-template-columns:auto auto 1fr auto; grid-gap:var(--size-2);}
 .sfl-question{border-bottom:1px dashed;}
+.sfl-more{display:flex; align-items:center;}
 
 
 
