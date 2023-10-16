@@ -8,6 +8,9 @@
 <?php require ($_SERVER['TAM'].'inc/meta.php')?>
 <h1 class="hide">Job Report <?php echo $page; ?></h1>
 <style><?php require ($_SERVER['TAM'].'css/login.css')?></style>
+
+
+
 <div class="rancak-login content_center">
 
   <div class="rancak-login-box">
@@ -37,5 +40,8 @@
   </div>
   
 </div>
+
+
+
 <?php require ($_SERVER['TAM'].'inc/footer.php')?>
 <?php require ($_SERVER['TAM'].'inc/base-bottom.php')?>

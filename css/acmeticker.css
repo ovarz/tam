@@ -1,0 +1,4 @@
+.acmeticker-wrap, .antb-list > li{height:var(--size-6); align-items:center;}
+.acmeticker-wrap{display:flex; overflow:hidden;}
+.antb-list > li{ display:inline-flex !important; margin-right:0 !important;}
+.antb-list > li > a{display:flex; margin-right:var(--size-3); padding-right:var(--size-3); border-right:1px solid;}

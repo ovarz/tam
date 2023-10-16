@@ -41,6 +41,7 @@ display:flex; text-align:center; align-items:center; justify-content:center;}
 
 
 .rancak-container{display:grid; min-height:100vh; grid-auto-rows:min-content;}
+.rancak-content{display:grid; grid-gap:var(--size-5); grid-auto-rows:min-content;}
 
 
 
@@ -61,14 +62,14 @@ nav::-webkit-scrollbar{width:0px;}
 
 
 
-header{display:flex; justify-content:space-between; position:-webkit-sticky; position:sticky; top:var(--size-4);}
+header{z-index:calc(var(--max-zindex) - 4000); display:flex; justify-content:space-between; position:-webkit-sticky; position:sticky; top:var(--size-4);}
 .header-left, .header-right{display:flex;}
 .header-button{height:var(--size-6); padding:0 var(--size-3);}
 .header-button .svgicon, .header-home-frame{width:auto; height:var(--size-4);}
 
 .header-menu-toggle{padding-left:var(--size-4);}
 .header-home-frame{width:30px;}
-.header-profile{display:flex; align-items:center; padding-right:var(--size-4);}
+.header-profile{--aspect-ratio:1/1; display:flex; align-items:center; padding-right:var(--size-4);}
 .header-profile-frame{width:var(--size-4); height:var(--size-4); margin-right:var(--size-3);}
 
 

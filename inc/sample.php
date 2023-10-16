@@ -1,0 +1,3 @@
+<?php
+  $random_title=array("Mobil Bekas Toyota Innova Harganya Cuma Rp100 Jutaan","Toyota Crown Sport Hybrid: SUV Mewah dengan Performa Tinggi","Toyota Siapkan Parkir Mobil Khusus di Pusat Perbelanjaan","Toyota Land Hopper: SUV Rp300 Jutaan yang Bakal Bikin Suzuki Jimny Ketar-Ketir","Toyota Gelar Kontes Modifikasi Mobil Niaga, Hasilnya Keren-keren!","New Corolla Altis Diluncurkan, Ini Fitur Barunya","Mobil Toyota Indonesia Pecahkan Rekor di Balap Dunia","Toyota Land Cruiser Mini, Pesaing Baru Suzuki Jimny","Toyota Siapkan Mobil Listrik dan Hybrid di Ubud untuk Transportasi Umum","Mobil-mobil Toyota GR Panaskan Aspal Ancol E-Prix Circuit");
+?>

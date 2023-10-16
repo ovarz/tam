@@ -4,9 +4,9 @@
 <?php 
   $_SERVER['TAM'] = $_SERVER['DOCUMENT_ROOT'] . '/tam/'; 
   $anticache = date ('s'.'i'.'H'.'d'.'m'.'Y');
-?>
 
-<?php
+
+
   return[
     'Dashboard' => [
       'icon' => 'home',
