@@ -44,7 +44,7 @@
             <div class="default-table-column column-plate">
 			  <div class="dtc-label mobile-only">Number Plate</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">B 0000 XXX</div>
+			  <a title="Detail" class="dtc-data" href="lfleet/vehicle-monitoring/detail.php">B 0000 XXX</a>
 			</div>
             <div class="default-table-column column-vin">
 			  <div class="dtc-label mobile-only">VIN</div>

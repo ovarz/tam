@@ -124,7 +124,7 @@ header{position:-webkit-sticky; position:sticky; z-index:calc(var(--max-zindex) 
   .default-table-head, .default-table-search{display:none !important; visibility:hidden; content-visibility:hidden;}
   .default-table, .default-table-row{display:grid; grid-gap:var(--size-3);}
   .default-table-row{padding:var(--size-3); border:1px solid;}
-  .default-table-column{display:grid; grid-gap:var(--size-1) var(--size-2); grid-template-columns:95px 2px 1fr; padding-bottom:var(--size-3); border-bottom:1px dashed;}
+  .default-table-column{display:grid; grid-gap:var(--size-1) var(--size-2); grid-template-columns:95px 4px 1fr; padding-bottom:var(--size-3); border-bottom:1px dashed;}
 }
 
 
