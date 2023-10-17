@@ -1,3 +1,10 @@
+function ClosePopup(){
+  $('.open-sticky').removeClass('show-sticky');
+  $('.rancak-popup').fadeOut('fast');
+}
+
+
+
 function nav_toggle(){
   $('.header-menu-toggle').click(function(){
 	$('body').toggleClass('nav-clicked');
@@ -40,10 +47,25 @@ function custom_password(){
 
 
 
+function open_popup(){
+  "use strict";
+  $('.open-popup').click(function(){
+    var get_id = $(this).attr('title');
+	$('.open-popup[title=' + get_id +']').toggleClass('show-popup');
+	$('.open-popup').not('.open-popup[title=' + get_id +']').removeClass('show-popup');
+    $('#popup-' + get_id).fadeToggle('fast');
+    $('.rancak-popup').not('#popup-' + get_id).fadeOut('fast');
+	return false;
+  });	
+}
+
+
+
 $(document).ready(function(){
   "use strict";
   nav_toggle();
   nav_sub_toggle();
   back_to_top();
   custom_password();
+  open_popup();
 });

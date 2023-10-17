@@ -2,7 +2,6 @@
   $page='home';
   $nav='Dashboard';
   $navParent='';
-  $login='no';
   $arrPageList = require ('inc/base.php')
 ?>
 <?php require ($_SERVER['TAM'].'inc/meta.php')?>

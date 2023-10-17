@@ -1,4 +1,4 @@
-<section title="Search" class="section-search <?php echo $search_class; ?>">
+<section title="Search" class="default-box section-search <?php echo $search_class; ?>">
   <input class="section-search-field" type="text" placeholder="Insert Keyword.....">
   <?php if($search_filter == 'yes') { ?>
     <button title="Filter" class="section-search-filter content_center">

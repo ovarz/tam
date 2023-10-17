@@ -1,6 +1,6 @@
 <?php 
   $page='lfleet';
-  $nav='Vehicle Monitoring';
+  $nav='Booking Service Request';
   $navParent='L-Fleet';
   $arrPageList = require ('../../inc/base.php')
 ?>
@@ -18,7 +18,7 @@
 	
 	
 	
-	<section title="Vehicle Monitoring Table" class="section-default">
+	<section title="Booking Service Request Table" class="section-default">
 	  <?php $st_back='no'; $st_back_link=''; $st_info='yes'; require ($_SERVER['TAM'].'module/section-title.php')?>
 	  
 	  <?php $search_class='mobile-only'; $search_filter='yes'; require ($_SERVER['TAM'].'module/section-search.php')?>
@@ -43,7 +43,7 @@
             <div class="default-table-column column-plate">
 			  <div class="dtc-label mobile-only">Number Plate</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <a title="Detail" class="dtc-data" href="lfleet/vehicle-monitoring/detail.php">B 0000 XXX</a>
+			  <a title="Detail" class="dtc-data" href="lfleet/booking-service-request/detail.php">B 0000 XXX</a>
 			</div>
             <div class="default-table-column column-vin">
 			  <div class="dtc-label mobile-only">VIN</div>

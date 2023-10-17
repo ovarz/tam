@@ -2,7 +2,6 @@
   $page='faq';
   $nav='F.A.Q';
   $navParent='';
-  $login='no';
   $arrPageList = require ('../inc/base.php')
 ?>
 <?php require ($_SERVER['TAM'].'inc/sample.php')?>
@@ -26,7 +25,7 @@
 	  
 	  <div class="section-faq-list">
 	    <?php for ($i=1; $i <= 10 ; $i++) { ?>
-          <div class="sfl-box">
+          <div class="default-box sfl-box">
             <div class="sfl-row sfl-question">
 			  <div class="sfl-column">Q</div>
 			  <div class="sfl-column">:</div>
