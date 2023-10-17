@@ -23,7 +23,8 @@
 	
 	
 	<section title="Running Text" class="acme-news-ticker running-text">
-	  <?php $st_back='no'; $st_back_link=''; $st_icon='home'; $st_label='home'; require ($_SERVER['TAM'].'module/section-title.php')?>
+	  <?php $st_back='no'; $st_back_link=''; $st_info='no'; require ($_SERVER['TAM'].'module/section-title.php')?>
+	  
 	  <div class="acme-news-ticker-box">
 		<ul class="antb-list">
 		  <?php for ($i=1; $i <= 10; $i++) { ?>

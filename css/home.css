@@ -1,8 +1,7 @@
 .running-text .section-title{margin-bottom:var(--size-3);}
 .running-text .acme-news-ticker-box{background-color:var(--bg-2); border:1px solid var(--color-border); border-radius:var(--rounded-2);}
 .running-text .antb-list{display:flex;}
-.running-text .antb-link{border-color:var(--color-border); -webkit-line-clamp:1; font-size:14px;
-display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;}
+.running-text .antb-link{border-color:var(--color-border); -webkit-line-clamp:1; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;}
 
 
 

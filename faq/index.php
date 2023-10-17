@@ -8,9 +8,6 @@
 <?php require ($_SERVER['TAM'].'inc/sample.php')?>
 <?php require ($_SERVER['TAM'].'inc/meta.php')?>
 <h1 class="hide">Job Report <?php echo $page; ?></h1>
-<link rel="stylesheet" type="text/css" href="css/acmeticker.css?<?php echo $anticache; ?>"/>
-<link rel="stylesheet" type="text/css" href="css/tiny-slider.css?<?php echo $anticache; ?>"/>
-<style><?php require ($_SERVER['TAM'].'css/home.css')?></style>
 
 
 
@@ -23,8 +20,10 @@
 	
 	
 	<section title="F.A.Q" class="section-default section-faq">
-	  <?php $st_back='no'; $st_back_link=''; $st_icon='faq'; $st_label='F.A.Q'; require ($_SERVER['TAM'].'module/section-title.php')?>
+	  <?php $st_back='no'; $st_back_link=''; $st_info='no'; require ($_SERVER['TAM'].'module/section-title.php')?>
+	  
 	  <?php $search_class=''; $search_filter='no'; require ($_SERVER['TAM'].'module/section-search.php')?>
+	  
 	  <div class="section-faq-list">
 	    <?php for ($i=1; $i <= 10 ; $i++) { ?>
           <div class="sfl-box">
@@ -49,8 +48,5 @@
 
 
 
-<script src="js/acmeticker.js"></script>
-<script src="js/tiny-slider.js"></script>
-<script><?php require ($_SERVER['TAM'].'js/home.js')?></script>
 <?php require ($_SERVER['TAM'].'inc/footer.php')?>
 <?php require ($_SERVER['TAM'].'inc/base-bottom.php')?>
