@@ -35,40 +35,75 @@
 	  <div class="default-data vehicle-monitoring-data">
 	    <div class="default-data-box">
 		
-		  <div class="ddb-row">
-		    <div class="ddb-column ddb-label">Subscription Start Date</div>
-		    <div class="ddb-column ddb-separator">:</div>
-		    <div class="ddb-column ddb-info">
-			  <div class="ddb-content">Tunas Toyota Pasar Minggu</div>
-			</div>
-		  </div>
-		
-		  <div class="ddb-row">
-		    <div class="ddb-column ddb-label">Subscription Start Date</div>
-		    <div class="ddb-column ddb-separator">:</div>
-		    <div class="ddb-column ddb-info">
-			  <div class="ddb-content">Tunas Toyota Pasar Minggu</div>
-			</div>
-		  </div>
+		  <?php  
+			$ddb_array = array();
+			$ddb_array[]=array('ddb_label'=>'Number Plate','ddb_content'=>'B 0000 XXX');
+			$ddb_array[]=array('ddb_label'=>'VIN','ddb_content'=>'XXXXXXXXXXXXXXXXX');
+			$ddb_array[]=array('ddb_label'=>'Brand','ddb_content'=>'Toyota');
+			$ddb_array[]=array('ddb_label'=>'Model','ddb_content'=>'Calya');
+			$ddb_array[]=array('ddb_label'=>'Year','ddb_content'=>'2023');
+			$ddb_array[]=array('ddb_label'=>'Group Dealer','ddb_content'=>'Tunas Toyota');
+			$ddb_array[]=array('ddb_label'=>'Dealer Outlet','ddb_content'=>'Tunas Toyota Pasar Minggu');
+			$ddb_array[]=array('ddb_label'=>'Preferable Dealer Service','ddb_content'=>'Tunas Toyota Pasar Minggu');
+			$ddb_array[]=array('ddb_label'=>'Delivery Date','ddb_content'=>'2023-08-08');
+			$ddb_array[]=array('ddb_label'=>'Remarks','ddb_content'=>'Lorem Ipsum Dolor');
+			foreach($ddb_array as $ddb_list){
+		  ?>
+            <div class="ddb-row">
+              <div class="ddb-column ddb-label"><?php echo($ddb_list['ddb_label'])?></div>
+              <div class="ddb-column ddb-separator">:</div>
+              <div class="ddb-column ddb-info">
+                <div class="ddb-content"><?php echo($ddb_list['ddb_content'])?></div>
+              </div>
+            </div>
+		  <?php } ?>
 		  
 		</div>
 	    <div class="default-data-box">
 		
-		  <div class="ddb-row">
-		    <div class="ddb-column ddb-label">Subscription Start Date</div>
-		    <div class="ddb-column ddb-separator">:</div>
-		    <div class="ddb-column ddb-info">
-			  <div class="ddb-content">Tunas Toyota Pasar Minggu</div>
-			</div>
-		  </div>
+		  <?php  
+			$ddb_array = array();
+			$ddb_array[]=array('ddb_label'=>'Subscription Status','ddb_content'=>'Active');
+			$ddb_array[]=array('ddb_label'=>'Subscription Start Date','ddb_content'=>'2023-08-08');
+			$ddb_array[]=array('ddb_label'=>'Subscription End Date','ddb_content'=>'2023-08-08');
+			$ddb_array[]=array('ddb_label'=>'Device ID','ddb_content'=>'999920230816006');
+			$ddb_array[]=array('ddb_label'=>'Device Manufacturer','ddb_content'=>'Teltonika');
+			foreach($ddb_array as $ddb_list){
+		  ?>
+            <div class="ddb-row">
+              <div class="ddb-column ddb-label"><?php echo($ddb_list['ddb_label'])?></div>
+              <div class="ddb-column ddb-separator">:</div>
+              <div class="ddb-column ddb-info">
+                <div class="ddb-content"><?php echo($ddb_list['ddb_content'])?></div>
+              </div>
+            </div>
+		  <?php } ?>
 		  
-		  <div class="ddb-row">
-		    <div class="ddb-column ddb-label">Subscription Start Date</div>
-		    <div class="ddb-column ddb-separator">:</div>
-		    <div class="ddb-column ddb-info">
-			  <div class="ddb-content">Off <?php require ($_SERVER['TAM'].'img/icon/alert.svg')?></div>
-			</div>
-		  </div>
+            <div class="ddb-row">
+              <div class="ddb-column ddb-label">Immobilizer Status</div>
+              <div class="ddb-column ddb-separator">:</div>
+              <div class="ddb-column ddb-info">
+                <div class="ddb-content ddb-alert">
+				  On <?php require ($_SERVER['TAM'].'img/icon/alert.svg')?>
+				</div>
+              </div>
+            </div>
+		
+		  <?php  
+			$ddb_array = array();
+			$ddb_array[]=array('ddb_label'=>'Masa Berlaku STNK','ddb_content'=>'2023-08-08');
+			$ddb_array[]=array('ddb_label'=>'Masa Berlaku BPKB','ddb_content'=>'2023-08-08');
+			$ddb_array[]=array('ddb_label'=>'Tanggal Uji KIR','ddb_content'=>'2023-08-08');
+			foreach($ddb_array as $ddb_list){
+		  ?>
+            <div class="ddb-row">
+              <div class="ddb-column ddb-label"><?php echo($ddb_list['ddb_label'])?></div>
+              <div class="ddb-column ddb-separator">:</div>
+              <div class="ddb-column ddb-info">
+                <div class="ddb-content"><?php echo($ddb_list['ddb_content'])?></div>
+              </div>
+            </div>
+		  <?php } ?>
 		  
 		</div>
 	  </div>

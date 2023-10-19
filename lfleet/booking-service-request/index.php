@@ -27,18 +27,14 @@
 	    <div class="default-table-row default-table-head">
 		  <div class="default-table-column column-plate">Number Plate</div>
 		  <div class="default-table-column column-vin">VIN</div>
-		  <div class="default-table-column column-brand">Brand</div>
-		  <div class="default-table-column column-model">Model</div>
-		  <div class="default-table-column column-year">Year</div>
-		  <div class="default-table-column column-customer">Customer Name</div>
-		  <div class="default-table-column column-project">Project Name</div>
-		  <div class="default-table-column column-immobilizer">Immobilizer Status</div>
-		  <div class="default-table-column column-reminder">Next Service Reminder</div>
-		  <div class="default-table-column column-status">Status</div>
-		  <div class="default-table-column column-remarks">Remarks</div>
+		  <div class="default-table-column column-dealer">Dealer</div>
+		  <div class="default-table-column column-name">Name</div>
+		  <div class="default-table-column column-phone">Phone Number</div>
+		  <div class="default-table-column column-servicedate">Service Date</div>
+		  <div class="default-table-column column-servivetype">Service Type</div>
 		</div>
-		<?php $total_column='11'; require ($_SERVER['TAM'].'module/table-column-search.php')?>
-		<?php for ($i=1; $i <= 10 ; $i++) { ?>
+		<?php $total_column='7'; require ($_SERVER['TAM'].'module/table-column-search.php')?>
+		<?php for ($i=1; $i <= 20 ; $i++) { ?>
           <div class="default-table-row">
             <div class="default-table-column column-plate">
 			  <div class="dtc-label mobile-only">Number Plate</div>
@@ -50,50 +46,30 @@
 			  <div class="dtc-separator mobile-only">:</div>
 			  <div class="dtc-data">0000000000000000</div>
 			</div>
-            <div class="default-table-column column-brand">
-			  <div class="dtc-label mobile-only">Brand</div>
+            <div class="default-table-column column-dealer">
+			  <div class="dtc-label mobile-only">Dealer</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">Toyota</div>
+			  <div class="dtc-data">AUTO2000 Tebet Saharjo</div>
 			</div>
-            <div class="default-table-column column-model">
-			  <div class="dtc-label mobile-only">Model</div>
+            <div class="default-table-column column-name">
+			  <div class="dtc-label mobile-only">Name</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">Fortuner</div>
+			  <div class="dtc-data">PT AAAAA</div>
 			</div>
-            <div class="default-table-column column-year">
-			  <div class="dtc-label mobile-only">Year</div>
+            <div class="default-table-column column-phone">
+			  <div class="dtc-label mobile-only">Phone</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">2023</div>
+			  <div class="dtc-data">+62&nbsp;800&nbsp;0000&nbsp;0000</div>
 			</div>
-            <div class="default-table-column column-customer">
-			  <div class="dtc-label mobile-only">Customer Name</div>
+            <div class="default-table-column column-servicedate">
+			  <div class="dtc-label mobile-only">Service Date</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">PT ABCDE</div>
+			  <div class="dtc-data">2023-08-08 08:00</div>
 			</div>
-            <div class="default-table-column column-project">
-			  <div class="dtc-label mobile-only">Project Name</div>
+            <div class="default-table-column column-servivetype">
+			  <div class="dtc-label mobile-only">Service Type</div>
 			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">XXXXXXX</div>
-			</div>
-            <div class="default-table-column column-immobilizer">
-			  <div class="dtc-label mobile-only">Immobilizer Status</div>
-			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">Off</div>
-			</div>
-            <div class="default-table-column column-reminder">
-			  <div class="dtc-label mobile-only">Next Service Reminder</div>
-			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">00/00/0000</div>
-			</div>
-            <div class="default-table-column column-status">
-			  <div class="dtc-label mobile-only">Status</div>
-			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">Active</div>
-			</div>
-            <div class="default-table-column column-remarks">
-			  <div class="dtc-label mobile-only">Remarks</div>
-			  <div class="dtc-separator mobile-only">:</div>
-			  <div class="dtc-data">Lorem Ipsum</div>
+			  <div class="dtc-data">30000</div>
 			</div>
           </div>
 		<?php } ?>
@@ -101,6 +77,14 @@
 	  
 	  <?php require ($_SERVER['TAM'].'module/pagination.php')?>
 	</section>
+	
+	
+	
+	<div class="bottom-button-list">
+	  <a title="Immobilizer" class="btn bbl-button" href="lfleet/booking-service-request/">
+	    Download
+	  </a>
+	</div>
 	
   </div>
 </div>

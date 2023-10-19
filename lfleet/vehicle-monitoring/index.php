@@ -38,7 +38,7 @@
 		  <div class="default-table-column column-remarks">Remarks</div>
 		</div>
 		<?php $total_column='11'; require ($_SERVER['TAM'].'module/table-column-search.php')?>
-		<?php for ($i=1; $i <= 10 ; $i++) { ?>
+		<?php for ($i=1; $i <= 20 ; $i++) { ?>
           <div class="default-table-row">
             <div class="default-table-column column-plate">
 			  <div class="dtc-label mobile-only">Number Plate</div>

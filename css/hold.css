@@ -110,7 +110,7 @@ a.dtc-data:hover{color:var(--color-text-2);}
 .ddb-row{border-color:var(--color-border);}
 .ddb-content-field, .ddb-content-disable{border-color:var(--color-border); background-color:transparent; border-radius:var(--rounded-2);}
 .ddb-content{color:var(--color-text-2);}
-div.ddb-content .svgicon{fill:var(--color-text-3);}
+.ddb-alert .svgicon{fill:var(--color-text-3);}
 .ddb-content-disable{background-color:var(--color-border);}
 .ddb-select .svgicon{fill:var(--color-text-1);}
 

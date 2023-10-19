@@ -13,5 +13,5 @@
 	</div>
     <a title="page" class="pagination-button desktop-only" href="">Next</a>
   </div>
-  <div class="pagination-info">Showing 1 to 10 of 888 entries</div>
+  <div class="pagination-info">Showing 1 to 20 of 888 entries</div>
 </div>
