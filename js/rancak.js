@@ -61,6 +61,16 @@ function open_popup(){
 
 
 
+function close_popup(){
+  "use strict";
+  $('.rpc-close, .rancak-popup-overlay').click(function(){
+    ClosePopup();
+	return false;
+  });	
+}
+
+
+
 $(document).ready(function(){
   "use strict";
   nav_toggle();
@@ -68,4 +78,5 @@ $(document).ready(function(){
   back_to_top();
   custom_password();
   open_popup();
+  close_popup();
 });

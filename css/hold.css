@@ -124,6 +124,40 @@ a.dtc-data:hover{color:var(--color-text-2);}
 
 
 
+.rancak-popup, .rancak-popup-overlay, .rancak-popup-container{top:0; left:0; width:100%; height:100%;}
+.rancak-popup{position:fixed; z-index:calc(var(--max-zindex) - 1000);}
+.rancak-popup-overlay{position:absolute; z-index:1; background-color:rgb(var(--color-border-dark) / 55%);}
+.rancak-popup-container{position:absolute; padding:var(--size-4);}
+.rancak-popup-container > span{position:relative; z-index:1000; width:100%; max-width:480px; 
+background-color:var(--bg-2); border-radius:var(--rounded-3); box-shadow:var(--shadow-default);}
+.rpc-close{display:flex; justify-content:flex-end; width:100%; padding:var(--size-4); padding-bottom:0; fill:var(--color-text-3);}
+.rpc-close:hover{fill:var(--color-text-2);}
+.rpc-close .svgicon{width:var(--size-5); height:auto;}
+.rpc-box{padding:var(--size-4); padding-top:0; display:grid; grid-gap:var(--size-2); line-height:140%; max-height:calc(100vh - 130px); grid-auto-rows:min-content; overflow-y:auto;}
+.rpc-title{text-align:center; font-weight:900; color:var(--color-text-2); font-size:var(--size-4); text-transform:uppercase; line-height:130%;}
+.rpc-desc{text-align:center;}
+.rpc-action{display:flex; gap:var(--size-2); margin-top:var(--size-3);}
+.rpc-button{width:100%;}
+.rpc-button{padding:var(--size-3) var(--size-4);}
+button.rpc-button-gray{background-color:var(--color-border); color:var(--color-text-1);}
+button.rpc-button-gray:hover{background-color:var(--color-text-3); color:var(--bg-2);}
+
+.rpc-form{display:grid; grid-gap:var(--size-3);}
+.rpc-row{display:grid; grid-gap:var(--size-2); grid-template-columns:115px 1fr;}
+.rpc-label{padding:var(--size-3) 0;}
+.rpc-data{position:relative;}
+.rpc-input{position:relative; z-index:1000; width:100%; padding:var(--size-3); border:1px solid var(--color-border); border-radius:var(--rounded-1);
+color:var(--color-text-2); font-weight:bold;}
+div.rpc-input{background-color:var(--color-border);}
+div.rpc-input > span{ display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:1; overflow:hidden;
+word-wrap:break-word; word-break:break-word; hyphens:auto;}
+input.rpc-input{background-color:transparent;}
+.rpc-row-odovalue .rpc-input{padding-right:var(--size-5);}
+.rpc-row-odovalue .rpc-km{position:absolute; z-index:1; top:var(--size-3); right:var(--size-3);}
+
+
+
+
 
 
 @media screen and (min-width:0px) and (max-width:1023px){

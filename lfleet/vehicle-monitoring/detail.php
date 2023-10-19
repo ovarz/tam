@@ -130,5 +130,88 @@
 
 
 
+<div id="popup-Immobilizer" class="rancak-popup popup-immobilizer">
+  <div class="rancak-popup-overlay"></div>
+  <div class="rancak-popup-container content_center">
+    <span>
+	  <button title="Popup Close" class="rpc-close"><?php require ($_SERVER['TAM'].'img/icon/close.svg')?></button>
+	  <div class="rpc-box">
+	    <div class="rpc-title">Immobilizer</div>
+	    <div class="rpc-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere libero ut ipsum condimentum viverra. Integer at consequat leo, quis ornare era.</div>
+		<div class="rpc-action">
+		  <button title="Yes" class="btn rpc-button rpc-button-red" onclick="location.href='lfleet/vehicle-monitoring/detail.php';">Yes</button>
+		  <button title="No" class="btn rpc-button rpc-button-gray" onclick="ClosePopup();">No</button>
+		</div>
+	  </div>
+	</span>
+  </div>
+</div>
+
+
+
+<div id="popup-ODOmeter" class="rancak-popup popup-odometer">
+  <div class="rancak-popup-overlay"></div>
+  <div class="rancak-popup-container content_center">
+    <span>
+	  <button title="Popup Close" class="rpc-close"><?php require ($_SERVER['TAM'].'img/icon/close.svg')?></button>
+	  <div class="rpc-box">
+	    <div class="rpc-title">ODO Update</div>
+	    <div class="rpc-form">
+		
+		  <div class="rpc-row">
+		    <div class="rpc-label">VIN</div>
+			<div class="rpc-data">
+			  <div class="rpc-input"><span>XXXXXXXXXXXXXX</span></div>
+			</div>
+		  </div>
+		
+		  <div class="rpc-row">
+		    <div class="rpc-label">Number Plate</div>
+			<div class="rpc-data">
+			  <div class="rpc-input"><span>B 0000 XXX</span></div>
+			</div>
+		  </div>
+		
+		  <div class="rpc-row">
+		    <div class="rpc-label">Last Input Value</div>
+			<div class="rpc-data">
+			  <div class="rpc-input"><span>30000</span></div>
+			</div>
+		  </div>
+		
+		  <div class="rpc-row">
+		    <div class="rpc-label">Last Input Date</div>
+			<div class="rpc-data">
+			  <div class="rpc-input"><span>2023-08-08</span></div>
+			</div>
+		  </div>
+		
+		  <div class="rpc-row">
+		    <div class="rpc-label">Last Input By</div>
+			<div class="rpc-data">
+			  <div class="rpc-input"><span>Adimas</span></div>
+			</div>
+		  </div>
+		
+		  <div class="rpc-row rpc-row-odovalue">
+		    <div class="rpc-label">Last Input Value</div>
+			<div class="rpc-data">
+			  <input class="rpc-input" required="" type="text" value="88888">
+			  <div class="rpc-km">KM</div>
+			</div>
+		  </div>
+		  
+		</div>
+		<div class="rpc-action">
+		  <button title="Save" class="btn rpc-button rpc-button-red" onclick="location.href='lfleet/vehicle-monitoring/detail.php';">Save</button>
+		  <button title="Cancel" class="btn rpc-button rpc-button-gray" onclick="ClosePopup();">Cancel</button>
+		</div>
+	  </div>
+	</span>
+  </div>
+</div>
+
+
+
 <?php require ($_SERVER['TAM'].'inc/footer.php')?>
 <?php require ($_SERVER['TAM'].'inc/base-bottom.php')?>
